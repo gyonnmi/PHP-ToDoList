@@ -1,10 +1,12 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
 
 /* reset */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Gowun Dodum", sans-serif;
 }
 
 ul,
@@ -41,6 +43,10 @@ body {
   margin: auto;
 }
 
+.addTodo {
+  margin-bottom: 20px;
+}
+
 .addTodo input[type="text"] {
   line-height: 50px;
   width: 80%;
@@ -63,4 +69,43 @@ body {
   font-size: 24px;
   color: #ff80ab;
   background-color: #e3f2fd;
+}
+
+.todo-container {
+  padding: 10px;
+}
+
+.todos {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  background-color: lavender;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 10px;
+  line-height: 30px;
+  border-radius: 15px;
+}
+
+.todos:last-child {
+  margin-bottom: 0;
+}
+
+.input_checkbox {
+  width: 24px;
+  height: 100%;
+}
+
+/* checkbox checked */
+.completed {
+  text-decoration: line-through;
+  color: #c7c7c7;
+}
+
+/* checkbox not checked */
+.todo {
+  color: #222222;
+}
+
+.material-symbols-outlined {
+  color: darkgray;
 }
