@@ -36,18 +36,18 @@ mysqli_close($conn); // DB 접속 종료
         <div class="todos">
           <div>
             <input type="checkbox" class="input_checkbox"
-              onclick="location.href'./app/check.php?id=<?php echo $row['id'] ?>'"
+              onclick="location.href='./app/check.php?id=<?php echo $row['id'] ?>'"
               <?php echo $row['checked'] ? 'checked' : '' ?>>
           </div>
           <p class="<?php echo $row['checked'] ? 'completed' : 'todo' ?>">
             <?php echo $row['title'] ?>
           </p>
           <div class="icon">
-            <a href="#">
+            <!-- <a href="#">
               <span class="material-symbols-outlined">
                 edit_note
               </span>
-            </a>
+            </a> -->
             <a href="./app/remove.php?id=<?php echo $row['id'] ?>" id="<?php echo $row['id'] ?>" class="delete_btn">
               <span class="material-symbols-outlined">
                 delete
