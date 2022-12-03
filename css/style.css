@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+/* reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+body {
+  background-color: #a3cca2;
+}
+
+.wrap {
+  width: 500px;
+  height: 100vh;
+  margin: auto;
+  background-color: #ffcdd2;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  padding: 10px 0;
+  color: #ffa06d;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+.addTodo input[type="text"] {
+  line-height: 50px;
+  width: 80%;
+  border: 1px solid #c0c0c0;
+  border-radius: 15px 0 0 15px;
+  padding: 0 5px;
+}
+
+.addTodo input[type="text"]:focus {
+  outline: none;
+}
+
+.addBtn {
+  width: 20%;
+  height: 52px;
+  float: right;
+  border: 1px solid #c0c0c0;
+  border-left: none;
+  border-radius: 0 15px 15px 0;
+  font-size: 24px;
+  color: #ff80ab;
+  background-color: #e3f2fd;
+}
